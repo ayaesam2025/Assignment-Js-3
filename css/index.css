@@ -1,0 +1,89 @@
+
+body{
+    background-color: #F7ECDE;
+    font-family: "PT Sans Caption", sans-serif;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    color: #352e28;
+    line-height: 60px;
+    text-align: center;
+}
+h1::before{
+    content: '';
+    margin: auto;
+    position: absolute;
+    height: 15px;
+    width:25%;
+    bottom: 7px;
+    background-color:#FEC260 ;
+    z-index: -1;
+    letter-spacing: 2px;
+    transition: height 0.4s;
+}
+h1:hover::before{
+    height: 30px;
+}
+h2{
+    text-align: center;
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, rgba(62,165,92,1) , rgba(178,171,73,1) );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+.bookmark-body{
+    border-width: 2px 0;
+    border-style: dotted;
+    border-color: #352E28;
+}
+.bookmark-body label{
+    color: #212529;
+    font-size: 16px;
+    line-height: 24px;
+}
+.form-control:focus {
+    border-color: #d99c39;
+    box-shadow: 0 0 0 .25rem #FADFB4;
+}
+
+thead,tr{
+    border-bottom:2px solid#DEE2E6; 
+}
+th {
+    padding: 0.5rem 0.5rem;
+}
+td{
+    padding: 1rem 0;
+}
+
+.error-message {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+.btn-danger {
+    width: 15%;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-hover-bg:#bb4120 ;
+    --bs-btn-hover-border-color: #a03315 ;
+}
+
+

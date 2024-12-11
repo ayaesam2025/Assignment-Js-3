@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container mt-3 p-5 justify-content-center  align-items-center flex-column">
+        <h1 class="fw-500 pb-2 position-relative ">Bookmarker</h1>
+        <div class="bookmark-body w-100 pt-3 py-4 mt-5 ">
+          <h2><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark"></i></h2>
+          
+            <label for="bookmarkName" class="fw-600 mb-2 "><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+            <input oninput="allValidation(this ,'msgName')" type="text" placeholder="Bookmark Name" class="form-control selectdInput" id="bookmarkName">
+         <p id="msgName" class="alert alert-danger p-2 d-none">Website Name is Not Valid</p>
+          
+         <div id="sitNameError" class="error-messag ">
+            <label for="bookmarkURL" class="fw-600 mb-2 mt-4 "><i class="fa-solid fa-link "></i>Site URL</label>
+            <input oninput="allValidation(this,'msgUrl')" type="url" placeholder="Website URL" class="form-control selectdInput" id="bookmarkURL">
+            <p id="msgUrl" class="alert alert-danger p-2 d-none">Website url is Not Valid</p>
+        </div>
+          <div class="text-center my-3">
+           
+            <button ondblclick="addWebsite()" class="btn btn-danger  mt-3" id="submitBtn">Submit</button>
+        </div>
+        </div>
+
+        <table class="table mt-4 text-center bg-light">
+          <thead>
+            <tr><th class="text-capitalize">index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableContent"></tbody>
+        </table>
+      </div>
+
+      
+
+     
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
